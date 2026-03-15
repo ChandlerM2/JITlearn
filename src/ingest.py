@@ -1,10 +1,7 @@
 from models import Catalog
 import chromadb
-from pathlib import Path
+from config import COLLECTION_NAME, DB_PATH
 
-# these are global paths
-COLLECTION_NAME = "book_catalog"
-DB_PATH = Path(__file__).parent.parent / "data" / "chroma_db"
 
 raw_entries =[
     {
@@ -30,7 +27,7 @@ raw_entries =[
 
 
 # always resolves relative to this file's location
-client = chromadb.PersistentClient(path= DB_PATH) # set up the DB client on disk and pathing
+client = chromadb.PersistentClient(path= DB_PATH) # set up the DB client on disk and create the DB if it doesn't exist within the data folder
 collection = client.get_or_create_collection(name = COLLECTION_NAME) # the name for the table / folder within the DB
 
 

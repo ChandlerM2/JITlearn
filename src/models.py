@@ -10,6 +10,8 @@ class Catalog(BaseModel):
     bgn_page_number: int
     end_page_number: int
 
+
+# examples 
 entry1 = Catalog(
     lookup_id="9781835082225_ch1_s1",
     title="Python Machine Learning By Example",
