@@ -1,0 +1,11 @@
+[project]
+name = "chapter-repo"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "chromadb>=1.5.5",
+    "pydantic>=2.12.5",
+    "sentence-transformers>=5.3.0",
+]
