@@ -21,6 +21,8 @@ This idea hinges on the phycology that the brain tends to remember solutions to 
 
 ## How to set it up on a new machine
 
+Download uv through pip install uv if you don't have it.. then in the terminal do UV sync to download all dependencies
+
 run the embedding model on your computer and then connect it with the MCP tool
 
 ## What goes in the data folder
@@ -28,3 +30,5 @@ run the embedding model on your computer and then connect it with the MCP tool
 the chromaDB or csv file 
 
 ## Data format
+
+"AI", "MATH", "ROBOTICS", "SAFETY", "DATA_ENG", "FINANCE", "COMPSCI", "PHILOSOPHY", "ML", "DS"

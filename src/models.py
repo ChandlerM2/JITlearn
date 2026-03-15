@@ -11,13 +11,22 @@ class Catalog(BaseModel):
     end_page_number: int
 
 entry1 = Catalog(
-    lookup_id="9781835082225_ch1_sc1",
+    lookup_id="9781835082225_ch1_s1",
     title="Python Machine Learning By Example",
-    chapter_name="Chapter 1",
-    subsection_name="1.1 What is Machine Learning?",
-    domains=["Artificial Intelligence", "Data Science"],
-    bgn_page_number=1,
-    end_page_number=20
+    chapter_name="Getting Started with Machine Learning and Python",
+    subsection_name="Understanding why we need machine learning",
+    domains= ["AI", "ML", "DS"],
+    bgn_page_number=2,
+    end_page_number=3
 )
 
-print(entry1.title)
+entry2 = Catalog( 
+    lookup_id="9781835082225_ch1_s2",
+    title="Python Machine Learning By Example",
+    chapter_name="Getting Started with Machine Learning and Python",
+    subsection_name="Differentiating between machine learning and automation",
+    domains= ["AI", "ML", "DS"],
+    bgn_page_number= 4,
+    end_page_number= 4
+)
+
